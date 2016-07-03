@@ -35,8 +35,9 @@ class Checker
 	public function getPrice()
 	{
 		$result = $this->dom->filter('.menu-fav-detail a')->attr('onclick');
-		print_r($result)
-		return (int)preg_replace("/([^0-9\\.])/i", "", $result);
+		preg_match('/(?:return\ addfavorite\((.*)\))/', $result, $matches);
+		$raw = explode(',', $matches[1]);
+		return (int)preg_replace("/([^0-9\\.])/i", "", $raw[1]);
 	}
 
 

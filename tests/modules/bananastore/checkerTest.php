@@ -14,8 +14,8 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 	public function testUrlExistsSuccess()
 	{
 		$url = 'http://shoponline.bananastore.com/product-detail/?productid=72754';
-		$checker = new Checker();
-		$result = $checker->getDom($url)->html();
+		$checker = new Checker($url);
+		$result = $checker->getDom()->html();
 
 		$this->assertContains("Apple iPad Mini 4 Wi-Fi 64GB Gold", $result);
 	}
@@ -23,8 +23,8 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 	public function testUrlExistsFail()
 	{
 		$url = 'http://shoponline.bananastore.com/product-detail/?productid=14123124';
-		$checker = new Checker();
-		$result = $checker->getDom($url)->html();
+		$checker = new Checker($url);
+		$result = $checker->getDom()->html();
 
 		$this->assertContains("ไม่พบสินค้า", $result);
 	}
@@ -33,8 +33,8 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 	{
 		//Check button id = AddToCart
 		$url = 'http://shoponline.bananastore.com/product-detail/?productid=72754';
-		$checker = new Checker();
-		$result = $checker->getInStock($url);
+		$checker = new Checker($url);
+		$result = $checker->getInStock();
 
 		$this->assertTrue($result);
 	}
@@ -43,10 +43,19 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 	{
 		//Check button id = AddToCart
 		$url = 'http://shoponline.bananastore.com/product-detail/?productid=73529';
-		$checker = new Checker();
-		$result = $checker->getOutOfStock($url);
+		$checker = new Checker($url);
+		$result = $checker->getInStock();
 
-		$this->assertTrue($result);
+		$this->assertFalse($result);
+	}
+
+	public function testGetPrice()
+	{
+		$url = 'http://shoponline.bananastore.com/product-detail/?productid=72754';
+		$checker = new Checker($url);
+		$result = $checker->getPrice();
+
+		$this->assertEquals(16900, $result);
 	}
 
 
