@@ -1,0 +1,13 @@
+{
+    "require": {
+        "fabpot/goutte": "^3.1",
+        "phpunit/phpunit": "^5.4",
+        "phpmailer/phpmailer": "^5.2"
+    },
+	"autoload": {
+		"psr-4": {
+			"App\\helpers\\": "helpers/",
+			"App\\modules\\": "modules/"
+		}
+	}
+}
