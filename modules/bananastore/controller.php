@@ -5,6 +5,7 @@ require __dir__.'/../../bootstrap.php';
 use App\modules\bananastore\Checker;
 use App\helpers\Mail;
 use App\helpers\Report;
+use GuzzleHttp\Exception\RequestException;
 
 /**
 * Bananastore Checker Modules
@@ -16,14 +17,19 @@ class Controller
 
 	public function run()
 	{
-		echo date('Y-m-d H:i:s')."[INFO]: Banana Store Checking...\n";
+		try {
+			echo date('Y-m-d H:i:s')."[INFO]: Banana Store Checking...\n";
 
-		$data = $this->getDataFromJSON($this->itemFile);
-		$result = $this->getReason($data);
+			$data = $this->getDataFromJSON($this->itemFile);
+			$result = $this->getReason($data);
 
-		if (!empty($result)) {
-			$report = new Report($result);
-			$report->exportJSON('bananastore.json');
+			if (!empty($result)) {
+				$report = new Report($result);
+				$report->exportJSON('bananastore.json');
+			}
+			
+		} catch (RequestException $e) {
+			echo date('Y-m-d H:i:s')."[ERROR]: Banana Store Error.\n";
 		}
 	}
 

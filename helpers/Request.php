@@ -2,6 +2,7 @@
 namespace App\helpers;
 
 use Goutte\Client;
+use GuzzleHttp\Exception\RequestException;
 
 /**
 * Helpers request 
@@ -37,9 +38,13 @@ class Request
 
 	public function getHtml()
 	{
-		$client = new Client();
-		$crawler = $client->request('GET', $this->url);
-		$this->setDom($crawler);
+		try {
+			$client = new Client();
+			$crawler = $client->request('GET', $this->url);
+			$this->setDom($crawler);
+		} catch (RequestException $e) {
+			echo date('Y-m-d H:i:s')."[ERROR]: Url ".$this->url." died\n";
+		}
 	}
 
 

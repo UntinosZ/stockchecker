@@ -24,20 +24,30 @@ class Checker
 
 	public function getInstock()
 	{
-		$result = false;
-		if ($this->dom->filter('.avilableproduct')->count() > 0
-			&& !$this->dom->filter('.outofproduct')->count() > 0) {
-			$result = true;
+		try {
+			$result = false;
+			if ($this->dom != null 
+				&& $this->dom->filter('.avilableproduct')->count() > 0
+				&& !$this->dom->filter('.outofproduct')->count() > 0) {
+				$result = true;
+			}
+			return $result;
+			
+		} catch (Exception $e) {
+			return false;
 		}
-		return $result;
 	}
 
 	public function getPrice()
 	{
-		$result = $this->dom->filter('.menu-fav-detail a')->attr('onclick');
-		preg_match('/(?:return\ addfavorite\((.*)\))/', $result, $matches);
-		$raw = explode(',', $matches[1]);
-		return (int)preg_replace("/([^0-9\\.])/i", "", $raw[1]);
+		try {
+			$result = $this->dom->filter('.menu-fav-detail a')->attr('onclick');
+			preg_match('/(?:return\ addfavorite\((.*)\))/', $result, $matches);
+			$raw = explode(',', $matches[1]);
+			return (int)preg_replace("/([^0-9\\.])/i", "", $raw[1]);
+		} catch (Exception $e) {
+			return 0;
+		}
 	}
 
 
