@@ -44,8 +44,11 @@ class Controller
 		return $result;
 	}
 
-	public function getDataFromJSON($filePath='')
+	public function getDataFromJSON($filePath = '')
 	{
+		if (empty($filePath)) {
+			$filePath = $this->itemFile;
+		}
 		$content = file_get_contents($filePath);
 		$result = json_decode($content, true);
 		return $result;

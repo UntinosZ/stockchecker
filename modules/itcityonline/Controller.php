@@ -17,7 +17,7 @@ class Controller
 	public function run()
 	{
 		echo date('Y-m-d H:i:s')."[INFO]: ITCity Online Checking...\n";
-		$data = $this->getDataFromJSON($this->itemFile);
+		$data = $this->getDataFromJSON();
 		$result = $this->getReason($data);
 
 		if (!empty($result)) {
@@ -46,8 +46,11 @@ class Controller
 		return $result;
 	}
 
-	public function getDataFromJSON($filePath='')
+	public function getDataFromJSON($filePath = '')
 	{
+		if (empty($filePath)) {
+			$filePath = $this->itemFile;
+		}
 		$content = file_get_contents($filePath);
 		$result = json_decode($content, true);
 		return $result;

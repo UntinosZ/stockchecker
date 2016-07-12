@@ -29,6 +29,19 @@ class StockChecker
 		return json_decode($data, true);
 	}
 
+	public function loadItems()
+	{
+		$result = [];
+		$this->loadModule();
+		foreach ($this->modules as $key => $value) {
+			$module = new $value['controller'];
+			foreach ($module->getDataFromJSON() as $k => $v) {
+				array_push($result, $v);
+			}
+		}
+		return $result;
+	}
+
 	public function sendReport()
 	{
 		$mailHtml = '';
@@ -48,14 +61,15 @@ class StockChecker
 	public function singleReport()
 	{
 		$report = [];
+		$baseReport = $this->loadItems();
 		foreach ($this->modules as $key => $value) {
 			foreach ($this->loadReport($value['name']) as $k => $v) {
-				array_push($report, $v);
+				if ($replaceKey = array_search($v['url'], array_column($baseReport, 'url') )) {
+					$baseReport[$replaceKey] = $v;
+				}
 			}
-			// $report[$key]['vendor'] = $value['name'];
-			// $report[$key]['data'] = $this->loadReport($value['name']);
 		}
-		$single = new Report($report);
+		$single = new Report($baseReport);
 		$single->exportJSON('report.json');
 	}
 
