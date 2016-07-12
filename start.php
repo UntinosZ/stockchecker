@@ -3,6 +3,7 @@ namespace App;
 
 require __dir__.'/bootstrap.php';
 use App\helpers\Mail;
+use App\helpers\Report;
 
 /**
 * Initialize Bot Checker product status
@@ -44,6 +45,20 @@ class StockChecker
 		}
 	}
 
+	public function singleReport()
+	{
+		$report = [];
+		foreach ($this->modules as $key => $value) {
+			foreach ($this->loadReport($value['name']) as $k => $v) {
+				array_push($report, $v);
+			}
+			// $report[$key]['vendor'] = $value['name'];
+			// $report[$key]['data'] = $this->loadReport($value['name']);
+		}
+		$single = new Report($report);
+		$single->exportJSON('report.json');
+	}
+
 	public function start()
 	{
 		$this->loadModule();
@@ -51,6 +66,7 @@ class StockChecker
 			$module = new $value['controller'];
 			$module->run();
 		}
+		$this->singleReport();
 		$this->sendReport();
 	}
 
