@@ -17,11 +17,11 @@ return array(
 			'controller' => 'App\\modules\\itcityonline\\Controller',
 			'mail_alert' => true,
 		],
-		[
-			'name' => 'bananastore',
-			'controller' => 'App\\modules\\bananastore\\Controller',
-			'mail_alert' => true,
-		],
+		// [
+		// 	'name' => 'bananastore',
+		// 	'controller' => 'App\\modules\\bananastore\\Controller',
+		// 	'mail_alert' => true,
+		// ],
 
   ),
   'mail' => array(
@@ -34,8 +34,8 @@ return array(
   	'smtp_port' 	=> 587,
   	'sender_email'=> 'predatorchecker@gmail.com',
   	'sender_name'	=> 'Predator Stock checker',
-  	'receiver_email'=> 'tonuntinosz@gmail.com',
-  	'receiver_name'=> 'Nopparid Mokpradab',
+  	'receiver_email'=> 'warat@thothzocial.com',
+  	'receiver_name'=> 'Warat Wongmaneekit',
   	'is_html' => true,
   ),
 );
