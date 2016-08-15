@@ -46,8 +46,26 @@
 	},
 	{
 		"name": "Aspire V5-591G-726Z",
-		"url": "http://jib.co.th/web/index.php/product/readProduct/22173/2/NOTEBOOK-ACER-ASPIRE-V5-591G-79SE",
+		"url": "http://jib.co.th/web/index.php/product/readProduct/20509/2/NOTEBOOK-ACER-ASPIRE-V5-591G-726Z",
 		"price": 29900
+	},
+	{
+		"name": "Predator Z35",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/20136/5/35",
+		"price": 34900
+	},
+	{
+		"name": "Aspire VN7-592G-73M9",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/22252/2/NOTEBOOK-ACER-ASPIRE-VN7-592G-73M9",
+		"price": 36990
+	},
+	{
+		"name": "XF240Hbmjdpr",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/21858/5/27%22-LED-ACER-XF270HBMJDPRZ",
+		"price": 9500
 	}
+
+
+
 
 ]
