@@ -17,11 +17,16 @@ return array(
 			'controller' => 'App\\modules\\itcityonline\\Controller',
 			'mail_alert' => true,
 		],
-		// [
-		// 	'name' => 'bananastore',
-		// 	'controller' => 'App\\modules\\bananastore\\Controller',
-		// 	'mail_alert' => true,
-		// ],
+		[
+			'name' => 'advice',
+			'controller' => 'App\\modules\\advice\\Controller',
+			'mail_alert' => true,
+		],
+		[
+			'name' => 'bananastore',
+			'controller' => 'App\\modules\\bananastore\\Controller',
+			'mail_alert' => true,
+		],
 
   ),
   'mail' => array(
