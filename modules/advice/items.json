@@ -43,5 +43,31 @@
 		"name": "Aspire V5-591G-726Z",
 		"url": "https://online.advice.co.th/product/notebook/notebook-acer/notebook-acer-aspire-v5-591g-726z-t002-black-",
 		"price": 29900
-	}
+	},
+	{
+		"name": "Predator G3-710-648G1T00MGI/T001",
+		"url": "https://online.advice.co.th/product/desktop-pc/acer/acer-predator-g3-710-648g1t00mgi-t001-w10",
+		"price": 29900
+	},
+	{
+		"name": "Predator Z35",
+		"url": "https://online.advice.co.th/product/monitor/led-35-/led-35-acer-predator-z35bmiphz-hdmi-b-curve",
+		"price": 31900
+	},
+	{
+		"name": "Aspire VN7-592G-79MX",
+		"url": "https://online.advice.co.th/product/notebook/notebook-acer/notebook-acer-aspire-vn7-592g-79mx-t001-black-",
+		"price": 30900
+	},
+	{
+		"name": "T3-715-648G1T00MGi/T003",
+		"url": "https://online.advice.co.th/product/desktop-pc/acer/acer-aspire-t3-715-648g1t00mgi-t003-w10",
+		"price": 33990
+	},
+	{
+		"name": "Aspire V5-591G-79SE",
+		"url": "https://online.advice.co.th/product/notebook/notebook-acer/notebook-acer-aspire-v5-591g-79se-t003-gray-",
+		"price": 26900
+	},
+
 ]

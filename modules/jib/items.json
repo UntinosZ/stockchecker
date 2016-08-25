@@ -63,9 +63,21 @@
 		"name": "XF240Hbmjdpr",
 		"url": "https://www.jib.co.th/web/index.php/product/readProduct/21858/5/27%22-LED-ACER-XF270HBMJDPRZ",
 		"price": 9500
-	}
-
-
-
+	},
+	{
+		"name": "Predator Z650",
+		"url": "http://jib.co.th/web/index.php/product/readProduct/22169/0/PROJECTOR-ACER-Z650",
+		"price": 41900
+	},
+	{
+		"name": "Aspire VN7-592G-79MX",
+		"url": "http://jib.co.th/web/index.php/product/readProduct/22174/0/NOTEBOOK-ACER-ASPIRE-VN7-592G-79MX",
+		"price": 33900
+	},
+	{
+		"name": "Aspire VN7-792G-78LM",
+		"url": "http://jib.co.th/web/index.php/product/readProduct/22308/0/NOTEBOOK-ACER-ASPIRE-VN7-792G-78LM",
+		"price": 33900
+	},
 
 ]

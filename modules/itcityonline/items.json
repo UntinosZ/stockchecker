@@ -24,16 +24,7 @@
 		"url": "http://www.itcityonline.com/item/201604DM040000047",
 		"price": 34900
 	},
-	{
-		"name": "Predator X34",
-		"url": "http://www.itcityonline.com/item/201604DM040000045/D5529",
-		"price": 39900
-	},
-	{
-		"name": "Predator XB281",
-		"url": "http://www.itcityonline.com/item/201606DM210000005/D5529",
-		"price": 22900
-	},
+
 	{
 		"name": "Aspire VN7-592G-73M9",
 		"url": "http://www.itcityonline.com/item/201607DM140000014",
@@ -55,19 +46,23 @@
 		"price": 29900
 	},
 	{
-		"name": "GN246HL",
-		"url": "http://www.itcityonline.com/item/201605DM310000002",
-		"price": 8950
+		"name": "Predator G1-710-641G1T128MGi/T005",
+		"url": "http://www.itcityonline.com/item/201608DM210000008",
+		"price": 54900
 	},
 	{
-		"name": "XF240Hbmjdpr",
-		"url": "http://www.itcityonline.com/item/201605DM310000001",
-		"price": 9500
+		"name": "Predator G1-710-6716G1T128MGi/T006",
+		"url": "http://www.itcityonline.com/item/201608DM210000009",
+		"price": 65900
 	},
 	{
-		"name": "XR342CKbmijpphz",
+		"name": "T3-715-648G1T00MGi/T003",
+		"url": "http://www.itcityonline.com/item/201608DM210000006",
+		"price": 29900
+	},
+	{
+		"name": "Aspire V5-591G-79SE",
 		"url": "http://www.itcityonline.com/item/201607DM140000005",
-		"price": 31900
-	}
-
+		"price": 26990
+	},
 ]
