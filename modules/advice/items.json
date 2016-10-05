@@ -20,11 +20,6 @@
 		"price": 39900
 	},
 	{
-		"name": "Aspire VN7-592G-73M9",
-		"url": "https://online.advice.co.th/product/notebook/notebook-acer/notebook-acer-aspire-vn7-592g-79mx-t001-black-",
-		"price": 36990
-	},
-	{
 		"name": "GN246HL",
 		"url": "https://online.advice.co.th/product/monitor/led-24-/led-24-acer-gn246hlbbid-dvi-hdmi-b-",
 		"price": 8950
@@ -68,5 +63,20 @@
 		"name": "Aspire V5-591G-79SE",
 		"url": "https://online.advice.co.th/product/notebook/notebook-acer/notebook-acer-aspire-v5-591g-79se-t003-gray-",
 		"price": 26900
+	},
+	{
+		"name": "Predator G1-710-641G1T128MGi/T005",
+		"url": "https://www.advice.co.th/product/desktop-pc/acer/acer-predator-g1-710-6416g1t128mgi-t005-w10",
+		"price": 54900
+	},
+	{
+		"name": "XB281",
+		"url": "https://www.advice.co.th/product/monitor/led-28-/led-28-acer-xb281hkbmiprz-b-",
+		"price": 22900
+	},
+	{
+		"name": "Aspire VN7-792G-78LM",
+		"url": "https://www.advice.co.th/product/notebook/notebook-acer/notebook-acer-aspire-vn7-792g-78lm-t001-black-",
+		"price": 33900
 	}
 ]

@@ -3,5 +3,21 @@
 		"name": "Predator G9-591-77FN",
 		"url": "http://shoponline.bananastore.com/product-detail/?productid=80931",
 		"price": 59900
-	}
+	},
+    {
+        "name": "Aspire VN7-592G-79MX",
+        "url": "http://shoponline.bananastore.com/product-detail/?productid=80533",
+        "price": 30900
+    },
+    {
+        "name": "Aspire V5-591G-79SE",
+        "url": "http://shoponline.bananastore.com/product-detail/?productid=82160",
+        "price": 26990
+    },
+    {
+        "name": "Aspire V5-591G-726Z",
+        "url": "http://shoponline.bananastore.com/product-detail/?productid=77494",
+        "price": 29900
+    }
+
 ]

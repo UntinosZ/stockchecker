@@ -13,17 +13,17 @@
 		"name": "Predator G9-591-722R",
 		"url": "https://www.jib.co.th/web/index.php/product/readProduct/20742/2/NOTEBOOK-ACER-PREDATOR-G9-591-722R-T001",
 		"price": 69900
-	},	
+	},
 	{
 		"name": "Predator G9-791-70HX",
 		"url": "https://www.jib.co.th/web/index.php/product/readProduct/20733/2/NOTEBOOK-ACER-PREDATOR-G9-791-70HX",
 		"price": 79900
-	},	
+	},
 	{
 		"name": "Predator G9-791-72Q4",
 		"url": "https://www.jib.co.th/web/index.php/product/readProduct/20014/2/NOTEBOOK-ACER-PREDATOR17-G9-791-72Q4",
 		"price": 89900
-	},	
+	},
 	{
 		"name": "Aspire VN7-572G-734L",
 		"url": "https://www.jib.co.th/web/index.php/product/readProduct/21165/2/NOTEBOOK-ACER-ASPIRE-VN7-572G-734L-T001",
@@ -78,5 +78,10 @@
 		"name": "Aspire VN7-792G-78LM",
 		"url": "http://jib.co.th/web/index.php/product/readProduct/22308/0/NOTEBOOK-ACER-ASPIRE-VN7-792G-78LM",
 		"price": 33900
+	},
+	{
+		"name": "Predator X34",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/21622/5/34%22-LED-ACER-X34ABMIPHZ",
+		"price": 39900
 	}
 ]
