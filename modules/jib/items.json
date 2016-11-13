@@ -83,5 +83,20 @@
 		"name": "Predator X34",
 		"url": "https://www.jib.co.th/web/index.php/product/readProduct/21622/5/34%22-LED-ACER-X34ABMIPHZ",
 		"price": 39900
+	},
+	{
+		"name": "Aspire E5-553G-F1J2",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/22941/2/NOTEBOOK-ACER-ASPIRE-E5-553G-F1J2",
+		"price": 16900
+	},
+	{
+		"name": "Aspire F5-573G-53SJ",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/23226/2/NOTEBOOK-ACER-ASPIRE-F5-573G-53SJ",
+		"price": 18900
+	},
+	{
+		"name": "Aspire VN7-792G-75B3",
+		"url": "https://www.jib.co.th/web/index.php/product/readProduct/23193/2/NOTEBOOK-ACER-VN7-792G-75B3",
+		"price": 38900
 	}
 ]
